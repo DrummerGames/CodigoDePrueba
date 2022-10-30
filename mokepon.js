@@ -54,18 +54,17 @@ function seleccionarPersonajeJugador() {
 function ataqueFuego () {
     ataqueJugador = 'Fuego'
     ataqueAleatorioOponente()
-    crearMensaje() 
-    
+    crearMensaje("Tu personaje ataco con " + ataqueJugador + " , el contrincante ataco con " + ataqueOponente + ". "  + resultadoFinal ) 
 }
 function ataqueAgua () {
     ataqueJugador = 'Agua'
     ataqueAleatorioOponente()
-    crearMensaje() 
+    crearMensaje("Tu personaje ataco con " + ataqueJugador + " , el contrincante ataco con " + ataqueOponente + ". "  + resultadoFinal ) 
 }
 function ataqueTierra () {
     ataqueJugador = 'Tierra'
     ataqueAleatorioOponente()
-    crearMensaje() 
+    crearMensaje("Tu personaje ataco con " + ataqueJugador + " , el contrincante ataco con " + ataqueOponente + ". "  + resultadoFinal ) 
 }
     
 function ataqueAleatorioOponente() {
@@ -85,10 +84,7 @@ function ataqueAleatorioOponente() {
 
 
 
-function combate (){
-    
-   
-
+function combate() {
     let spanvidasJugador=document.getElementById ('vida-jugador')
     let spanvidasOponente=document.getElementById ('vida-oponente')
     
@@ -125,34 +121,23 @@ function combate (){
    
     function veredicto (){
     
-    
     if (vidasOponente == 0){
-        veredictoFinal = ("Has ganado la batalla !FELICITACIONES")
+        veredictoFinal = "Has ganado la batalla !FELICITACIONES"
     } else if (vidasJugador == 0){
-        veredictoFinal=("has perdido la batalla, retirada")
+        veredictoFinal="has perdido la batalla, retirada"
     }
+    mensaje(veredictoFinal)
 
 }
 
    
-	 function crearMensaje (){
+	 function crearMensaje (mensaje){
 	    let SectionMensajes = document.getElementById("mensajes") 
 	    let parrafo = document.createElement("p")
-	    parrafo.innerHTML = "Tu personaje ataco con " + ataqueJugador + " , el contrincante ataco con " + ataqueOponente + ". "  + resultadoFinal 
+	    parrafo.innerHTML = mensaje
 	    SectionMensajes.appendChild (parrafo) //el APENDCHILD sirve para agregar algo creado en JS  dentro del HTMl
 
 }
-    
-    function crearMensajeFinal (veredictoFinal){
-    let SectionMensajes = document.getElementById("mensajes") 
-    let parrafo = document.createElement("p")
-    parrafo.innerHTML = veredictoFinal
-    SectionMensajes.appendChild (parrafo)
-
-}     
-
-
-
 
     function aleatorio(min, max){
     return Math.floor(Math.random () * (max - min + 1) + min)
