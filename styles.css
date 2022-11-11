@@ -1,0 +1,83 @@
+.cuerpo {
+    background-image: url(legendario.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family:monospace;
+    color:white;
+    font-size: 25px;
+    
+ 
+}
+
+.personaje{
+    /* border-radius: 5px;
+    border:solid 5px;
+    margin: 30px; */
+}
+.titulo{
+    text-align: center;
+    margin: 40px; 
+    /* background-color: orange;
+    border:solid;
+    border-radius: 2px; */
+
+    /* color: teal;
+    width: 312px;
+    height: 50px;
+    background-color: orange; */
+
+
+}
+
+label {
+    /* background-color:tomato;
+    width: 312px;
+    height: 50px; */
+}
+
+input{
+    /* background-color: aqua;
+    width: 312px;
+    height: 50px; */
+
+}
+
+button{
+    /* background-color: violet;
+    width: 312px;
+    height: 50px; */
+}
+
+.boton-fuego{
+    font-size: 15px;
+    font-family:monospace; 
+    font-size: 20px;
+}
+
+.boton-agua{
+    font-size: 15px;
+    font-family:monospace; 
+    font-size: 20px;
+
+}
+
+.boton-tierra{
+    font-size: 15px;
+    font-family:monospace; 
+    font-size: 20px;
+
+}
+
+.boton-personaje{
+    font-size: 15px;
+    font-family:monospace;
+    font-size: 20px;
+
+}
+
+.boton-reiniciar{
+    font-size: 15px;
+    font-family:monospace;
+    font-size: 20px;
+
+}
