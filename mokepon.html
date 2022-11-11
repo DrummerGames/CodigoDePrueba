@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="./styles.css">
     <meta charset="utf-8" />
 <title>mokepon</title>
 
-<h1>MOKEPON!🔥🌊🌱 </h1>
+<body class = cuerpo>
 
-<section id="seleccionar-personaje">
-<h2>Seleccione su personaje:</h2>
+<h1 class="titulo">MOKEPON!🔥🌊🌱 </h1>
 
-<label for="subzero">Subzero</label>
-<input type="radio" name="personajes" id="subzero">
+<section  id="seleccionar-personaje">
+<h2 class="personaje">Seleccione su personaje:</h2>
 
-<label for="scorpion">Scorpion</label>    
+<label  for="subzero">Subzero</label> 
+<input  type="radio" name="personajes" id="subzero">
+
+<label for="scorpion">Scorpion</label> 
 <input type="radio" name="personajes" id="scorpion">
 
-<label for="tremor">Tremor</label>
+<label  for ="tremor">Tremor</label> 
 <input type="radio" name="personajes" id="tremor">
 
-<button id="boton-personaje" >Seleccionar</button>
+<button class="boton-personaje" id="boton-personaje" >Seleccionar</button>
 
 </section>
 
-<section id="seleccionar-ataque">
+<section class= "ataque"  id="seleccionar-ataque">
 
     <h2>Seleccione su ataque:</h2>
     <p>Personaje <span id="personaje-jugador"></span>  tiene <span id="vida-jugador">3</span> vidas</p>
     <p>Personaje <span id="personaje-oponente"></span>  tiene <span id="vida-oponente">3</span> vidas</p>
     
-<p> 
-    <button id="boton-fuego" >Fuego🔥</button>
-    <button id="boton-agua">Agua 💧</button>
-    <button id="boton-tierra">Tierra 🌱</button>   
+<p class="boton-ataque"> 
+    <button class="boton-fuego" id="boton-fuego" >Fuego🔥</button>
+    <button class="boton-agua" id="boton-agua">Agua 💧</button>
+    <button class="boton-tierra" id="boton-tierra">Tierra 🌱</button>   
 </p>
 </section>
 <section id="mensajes">
 
 
 </section>
-<Section id="reinicar">
-<button id="boton-reinicar">Reiniciar</button>
+<Section id="reiniciar">
+<button class="boton-reiniciar" id="boton-reiniciar">Reiniciar</button>
 </Section>
 
 </head>
-    <body>
+  
 
     </body>
 </html>
+
