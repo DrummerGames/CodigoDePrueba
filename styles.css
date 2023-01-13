@@ -126,16 +126,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+    justify-content: center;
 
-#mensajes {
     width: 220px;
     background: #3C4048;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 6px;
+    border: 2px solid white;
 
 }
 
@@ -149,12 +149,12 @@
 .boton-reiniciar {
     font-size: 15px;
     font-family: 'Fredoka One', cursive;
-    color: white;
+    color: black;
     font-size: 20px;
     font-size: 20px;
-    background: blue;
+    /* background: blue; */
     padding: 10px;
-    border: 3px solid white;
+    border: 3px solid transparent;
 
 }
 
