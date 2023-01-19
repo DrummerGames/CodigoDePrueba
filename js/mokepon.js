@@ -169,9 +169,6 @@ function crearMensaje() {
     sectionMensajes.innerHTML = resultadoFinal
     nuevoAtaqueDelJugador.innerHTML = ataqueJugador
     nuevoAtaqueDelOponente.innerHTML = ataqueOponente
-
-    // let parrafo = document.createElement("p")
-    // parrafo.innerHTML = "Tu personaje ataco con " + ataqueJugador + " , el contrincante ataco con " + ataqueOponente + ". "  + resultadoFinal 
     ataqueDelJugador.appendChild(nuevoAtaqueDelJugador)
     ataqueDelOponente.appendChild(nuevoAtaqueDelOponente)
 
@@ -184,8 +181,7 @@ function crearMensajeFinal() {
     let SectionMensajes = document.getElementById("mensajes")
     let parrafo = document.createElement("p")
     if (vidasOponente <= 0) {
-        // parrafo.innerHTML = veredictoFinal
-        // SectionMensajes.appendChild (parrafo) 
+      
 
         let botonFuego = document.getElementById('boton-fuego')
         let botonAgua = document.getElementById('boton-agua')
@@ -200,10 +196,6 @@ function crearMensajeFinal() {
 
     }
     else if (vidasJugador <= 0) {
-        // parrafo.innerHTML = veredictoFinal
-        // SectionMensajes.appendChild (parrafo)
-
-
         let botonFuego = document.getElementById('boton-fuego')
         let botonAgua = document.getElementById('boton-agua')
         let botonTierra = document.getElementById('boton-tierra')
