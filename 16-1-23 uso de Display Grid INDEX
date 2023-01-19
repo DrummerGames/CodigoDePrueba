@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
 
@@ -54,19 +54,25 @@
         </div>
 
         <div class="seccion-mensajes">
-            <p id="resultado">No mueras 💀 </p>                           
-            </section>
+            <p id="resultado">No mueras 💀 </p>
+
             <Section id="reiniciar">
                 <button class="boton-reiniciar" id="boton-reiniciar">Reiniciar 🔃 </button>
             </Section>
         </div>
         <section>
-        <div>
-            <div id="ataque-del-jugador"></div>
-            <div id="ataque-del-oponente"></div>
-            <p>Tu Personaje <span id="personaje-jugador"></span> tiene <span id="vida-jugador">3</span> vidas</p>
-            <p> El adversario <span id="personaje-oponente"></span> tiene <span id="vida-oponente">3</span> vidas</p>
-        </div>
+            <div class="grid-combate">
+                <div>
+                    <P id="vida-jugador">3 vidas </p>
+                    <p id="personaje-jugador"></p>
+                    <div id="ataque-del-jugador"></div>
+                </div>
+                <div>
+                    <P id="vida-oponente">3 vidas </p>
+                    <p id="personaje-oponente"></p>
+                    <div id="ataque-del-oponente"></div>
+                </div>
+        </section>
     </section>
 </body>
 
