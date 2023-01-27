@@ -1,3 +1,21 @@
+
+let botonPersonajeJugador = document.getElementById('boton-personaje')
+let botonFuego = document.getElementById('boton-fuego')
+let botonAgua = document.getElementById('boton-agua')
+let botonTierra = document.getElementById('boton-tierra')
+let botonReiniciar = document.getElementById("boton-reiniciar")
+
+var inputsubzero = document.getElementById('subzero').checked
+var inputscorpion = document.getElementById('scorpion').checked
+var inputtremor = document.getElementById('tremor').checked
+let spanPersonajeJugador = document.getElementById("personaje-jugador")
+
+let seccionSeleccionarPersonaje = document.getElementById('seleccionar-personaje')
+
+
+
+
+
 let ataqueJugador
 let ataqueOponente
 let resultadoFinal
@@ -7,20 +25,15 @@ let vidasOponente = 3
 let veredictoFinal
 
 
+
 function iniciarJuego() {
+    
     let seccionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
     seccionSeleccionarAtaque.style.display = 'none'
-
+    
     let seccionReiniciar = document.getElementById('reiniciar')
-    seccionReiniciar.style.display = 'none'
-
-    let botonPersonajeJugador = document.getElementById('boton-personaje')
-    let botonFuego = document.getElementById('boton-fuego')
-    let botonAgua = document.getElementById('boton-agua')
-    let botonTierra = document.getElementById('boton-tierra')
-    let botonReiniciar = document.getElementById("boton-reiniciar")
-
-
+    seccionReiniciar.style.display = 'block'
+        
     botonPersonajeJugador.addEventListener('click', seleccionarPersonajeJugador)
     botonFuego.addEventListener('click', ataqueFuego)
     botonAgua.addEventListener('click', ataqueAgua)
@@ -30,16 +43,11 @@ function iniciarJuego() {
 }
 
 function seleccionarPersonajeJugador() {
-    let seccionSeleccionarPersonaje = document.getElementById('seleccionar-personaje')
-    seccionSeleccionarPersonaje.style.display = 'none'
-
     let seccionSeleccionarAtaque = document.getElementById('seleccionar-ataque')
-    seccionSeleccionarAtaque.style.display = 'block'
-
-    let inputsubzero = document.getElementById('subzero').checked
-    let inputscorpion = document.getElementById('scorpion').checked
-    let inputtremor = document.getElementById('tremor').checked
-    let spanPersonajeJugador = document.getElementById("personaje-jugador")
+    seccionSeleccionarAtaque.style.display = 'none'
+    
+    let seccionSeleccionarPersonaje = document.getElementById('seleccionar-personaje')
+    seccionSeleccionarPersonaje.style.display = 'block'
 
     if (inputsubzero == true) {
         spanPersonajeJugador.innerHTML = "Subzero"
@@ -59,8 +67,6 @@ function seleccionarPersonajeJugador() {
     }
 
     seleccionarPersonajeOponte()
-
-
 
     function seleccionarPersonajeOponte() {
         let personajeAleatorio = aleatorio(1, 3)
@@ -169,9 +175,6 @@ function crearMensaje() {
     sectionMensajes.innerHTML = resultadoFinal
     nuevoAtaqueDelJugador.innerHTML = ataqueJugador
     nuevoAtaqueDelOponente.innerHTML = ataqueOponente
-
-    // let parrafo = document.createElement("p")
-    // parrafo.innerHTML = "Tu personaje ataco con " + ataqueJugador + " , el contrincante ataco con " + ataqueOponente + ". "  + resultadoFinal 
     ataqueDelJugador.appendChild(nuevoAtaqueDelJugador)
     ataqueDelOponente.appendChild(nuevoAtaqueDelOponente)
 
@@ -184,8 +187,7 @@ function crearMensajeFinal() {
     let SectionMensajes = document.getElementById("mensajes")
     let parrafo = document.createElement("p")
     if (vidasOponente <= 0) {
-        // parrafo.innerHTML = veredictoFinal
-        // SectionMensajes.appendChild (parrafo) 
+        
 
         let botonFuego = document.getElementById('boton-fuego')
         let botonAgua = document.getElementById('boton-agua')
@@ -200,8 +202,7 @@ function crearMensajeFinal() {
 
     }
     else if (vidasJugador <= 0) {
-        // parrafo.innerHTML = veredictoFinal
-        // SectionMensajes.appendChild (parrafo)
+        
 
 
         let botonFuego = document.getElementById('boton-fuego')

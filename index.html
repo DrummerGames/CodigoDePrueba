@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
 
-    <script src="./js/mokepon.js"></script>
+
     <link rel="stylesheet" href="./styles.css">
     <meta charset="utf-8" />
     <title>mokepon</title>
@@ -17,24 +17,25 @@
         </h3>
 
         <div class="tarjetas">
+            <input type="radio" name="personajes" id="subzero">
             <label class="tarjeta-personaje" for="subzero">
                 <p>Subzero</p>
                 <img src="./imagenes/subzero.png" alt="Subzero">
             </label>
-            <input type="radio" name="personajes" id="subzero">
-
+            
+            <input type="radio" name="personajes" id="scorpion">
             <label class="tarjeta-personaje" for="scorpion">
                 <p>Scorpion</p>
                 <img src="./imagenes/Scorpion.png" alt="Scorpion">
 
             </label>
-            <input type="radio" name="personajes" id="scorpion">
-
+            
+            <input type="radio" name="personajes" id="tremor">
             <label class="tarjeta-personaje" for="tremor">
                 <p> Tremor </p>
                 <img src="./imagenes/Tremor.png" alt="Tremor">
             </label>
-            <input type="radio" name="personajes" id="tremor"> <br><br>
+            <br><br>
 
 
         </div>
@@ -54,20 +55,27 @@
         </div>
 
         <div class="seccion-mensajes">
-            <p id="resultado">No mueras 💀 </p>                           
-            </section>
+            <p id="resultado">No mueras 💀 </p>
+
             <Section id="reiniciar">
                 <button class="boton-reiniciar" id="boton-reiniciar">Reiniciar 🔃 </button>
             </Section>
         </div>
         <section>
-        <div>
-            <div id="ataque-del-jugador"></div>
-            <div id="ataque-del-oponente"></div>
-            <p>Tu Personaje <span id="personaje-jugador"></span> tiene <span id="vida-jugador">3</span> vidas</p>
-            <p> El adversario <span id="personaje-oponente"></span> tiene <span id="vida-oponente">3</span> vidas</p>
-        </div>
+            <div class="grid-combate">
+                <div class="css-ataque-jugador">
+                    <P id="vida-jugador">3 vidas </p>
+                    <p id="personaje-jugador"></p>
+                    <div id="ataque-del-jugador"></div>
+                </div>
+                <div class="css-ataque-enemigo">
+                    <P id="vida-oponente">3 vidas </p>
+                    <p id="personaje-oponente"></p>
+                    <div id="ataque-del-oponente"></div>
+                </div>
+        </section>
     </section>
+    <script src="./js/mokepon.js"></script>
 </body>
 
 </html>

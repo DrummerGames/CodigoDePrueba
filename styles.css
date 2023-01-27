@@ -22,19 +22,6 @@
 
 }
 
-.subtitulo {}
-
-
-/* .seccion-personajes{
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-
-} */
-
-
 .seccion-personajes {
     justify-content: center;
     text-align: center;
@@ -54,6 +41,7 @@
     height: 140px;
     width: 212px;
     background: #3C4048;
+    color: white;
     text-align: center;
     margin: 10px;
     border: 2px solid white;
@@ -73,9 +61,7 @@
 
 
 .elegir-personaje {
-    /* display: block; */
     margin-top: 20px;
-
     border-radius: 20px;
     border: solid 2px;
     padding: 9px;
@@ -87,6 +73,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
+    
 }
 
 .boton-fuego {
@@ -97,6 +84,7 @@
     background: rgb(185, 121, 3);
     padding: 10px;
     border: 2px solid white;
+    border-radius: 20px;
 
 }
 
@@ -108,6 +96,7 @@
     background: rgb(7, 125, 223);
     padding: 10px;
     border: 2px solid white;
+    border-radius: 20px;
 }
 
 .boton-tierra {
@@ -118,18 +107,16 @@
     background: rgb(121, 46, 3);
     padding: 10px;
     border: 2px solid white;
+    border-radius: 20px;
 
 
 }
 
 .seccion-mensajes {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
+    margin: auto;
     width: 220px;
     background: #3C4048;
+    color: white;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -137,6 +124,14 @@
     border-radius: 6px;
     border: 2px solid white;
 
+}
+
+.grid-combate {
+    display: grid;
+    grid-template-columns: 109px 103px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .elegir-personaje {
@@ -149,16 +144,36 @@
 .boton-reiniciar {
     font-size: 15px;
     font-family: 'Fredoka One', cursive;
-    color: black;
+    color: white;
     font-size: 20px;
     font-size: 20px;
-    /* background: blue; */
     padding: 10px;
     border: 3px solid transparent;
+    background-color: transparent;
 
+}
+
+.css-ataque-jugador, .css-ataque-enemigo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input {
 
-    display: none
+display: none 
+}
+
+input:checked + label{
+    background-color: #B2B2B2;
+    color: black;
+    zoom: 120%;
+    box-shadow: #3C4048;
+}
+
+@media (max-width: 360px){
+    .tarjetas,.botonera-ataques{
+    flex-direction: column;
+    }
 }
